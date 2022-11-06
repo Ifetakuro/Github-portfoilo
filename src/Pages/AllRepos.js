@@ -87,7 +87,7 @@ export const AllRepos = () => {
           </div>
         </div>
       )}
-      {data && !loading && (
+      {newData && !loading && !error && (
         <div className="pag-div">
           <div>
             <button

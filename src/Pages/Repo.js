@@ -42,7 +42,7 @@ export const Repo = () => {
             <span>Last updated on</span> {convertDate(data && data.updated_at)}{" "}
           </p>
           <p>
-            <span>Pushed on</span>
+            <span>Pushed on </span>
             {convertDate(data && data.pushed_at)}
           </p>
         </div>

@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.side-bar nav h2 {
+.side-bar h2 {
   display: flex;
   gap: 1rem;
   padding: 0.8rem;
@@ -38,7 +38,6 @@
   display: flex;
   align-items: center;
   padding: 0.8rem;
-  font-weight: 500;
   gap: 1.2rem;
   color: #333;
   border-right: 3px solid transparent;
@@ -60,4 +59,29 @@
 .side-bar.show-bar {
   width: 12rem;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar {
+    width: 2.5rem;
+  }
+  .side-bar.show-bar {
+    width: 2.5rem;
+  }
+  .side-bar nav .bar-link {
+    font-size: 1rem;
+    font-weight: bold;
+    gap: 0.7rem;
+  }
+
+  .side-bar h2 {
+    gap: 0.7rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .side-bar .bar-center {
+    padding: 0.7rem;
+    display: none;
+  }
 }
