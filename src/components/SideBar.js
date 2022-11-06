@@ -58,7 +58,7 @@ export const SideBar = () => {
           <MdClose />
         </span>
       )}
-      <nav>
+      <div>
         <h2>
           <span>
             <FaGithub />
@@ -73,7 +73,7 @@ export const SideBar = () => {
             </CustomNavLink>
           ))}
         </nav>
-      </nav>
+      </div>
     </div>
   );
 };

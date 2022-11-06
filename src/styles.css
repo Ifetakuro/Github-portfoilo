@@ -8,8 +8,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  width: 100%;
+}
 .container {
   min-height: 100vh;
+  width: 100%;
   position: absolute;
   right: 0;
   transition: all 0.25s;
@@ -50,10 +54,33 @@
 .repo-box {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
-  min-width: 300px;
   word-wrap: break-word;
   border-radius: 5px;
   background: #fff;
   color: #333;
   position: relative;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar.show-bar + .container {
+    width: calc(100% - 40px);
+  }
+
+  .side-bar + .container {
+    width: calc(100% - 40px);
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .repo-box {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
 }
